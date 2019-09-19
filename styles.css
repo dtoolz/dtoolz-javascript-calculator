@@ -7,7 +7,25 @@
 body {
     padding: 0;
     margin: 0;
-    background: linear-gradient(to right, rgb(226, 67, 141), rgb(59, 56, 224));
+    width: 100%;
+	height: 100vh;
+	font-family: "Exo", sans-serif;
+	color: #fff;
+	background: linear-gradient(45deg, #ee7752, #23a6d5, #d523c6, #e7e43c);
+	background-size: 400% 400%;
+	animation: gradientBG 10s ease infinite; 
+}
+
+@keyframes gradientBG {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
 
 .calculator-grid {
